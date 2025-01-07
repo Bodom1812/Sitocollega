@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Brunner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #d7d7d7; /* Grigio RAL 7035 */
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            padding: 10px;
+        }
+        .container {
+            width: 100%;
+            max-width: none;
+            background: #d7d7d7; /* Sfondo uniforme */
+            padding: 15px;
+        }
+        img {
+            width: 80%;
+            height: auto;
+            background-color: #d7d7d7;
+            animation: slideUp 1.5s ease-out forwards; /* Animazione per il logo */
+        }
+        .contacts {
+            margin-top: 15px;
+            font-size: 16px;
+            line-height: 1.4;
+            animation: slideDown 1.5s ease-out forwards; /* Animazione per i contatti */
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .contacts a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease; /* Transizione colore */
+        }
+        .contacts a:hover {
+            color: #333; /* Cambio colore più marcato */
+        }
+        /* Media query per schermi più grandi */
+        @media (min-width: 600px) {
+            body {
+                padding: 20px;
+            }
+            .container {
+                max-width: 600px;
+            }
+            img {
+                width: 90%;
+            }
+            .contacts {
+                font-size: 18px;
+                margin-top: 20px;
+                line-height: 1.5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Logo Christian Brunner">
+        <div class="contacts">
+            <p><a href="mailto:christian@brunner-ing.it">christian@brunner-ing.it</a> | <a href="http://www.brunner-ing.it" target="_blank">www.brunner-ing.it</a> | <a href="tel:+393345309990">+39 334 5309990</a></p>
+            <p>Meran Merano | Südtirol Alto Adige | Italy</p>
+        </div>
+    </div>
+</body>
+</html>
